@@ -1,0 +1,977 @@
+Watching for file changes with StatReloader
+[14/May/2026 07:15:23] "GET / HTTP/1.1" 200 172
+Not Found: /favicon.ico
+[14/May/2026 07:15:24] "GET /favicon.ico HTTP/1.1" 404 3810
+[14/May/2026 07:15:39] "GET /topics/ HTTP/1.1" 200 358
+[14/May/2026 07:15:44] "GET /topics/1 HTTP/1.1" 200 1957
+[14/May/2026 07:15:47] "GET /edit_entry/4 HTTP/1.1" 200 548
+[14/May/2026 07:15:53] "GET /topics/1 HTTP/1.1" 200 1957
+[14/May/2026 07:15:57] "GET /edit_entry/2 HTTP/1.1" 200 867
+[14/May/2026 07:16:00] "GET /topics/1 HTTP/1.1" 200 1957
+[14/May/2026 07:16:03] "GET /edit_entry/5 HTTP/1.1" 200 537
+[14/May/2026 07:16:12] "POST /edit_entry/5 HTTP/1.1" 302 0
+[14/May/2026 07:16:12] "GET /topics/1 HTTP/1.1" 200 1968
+[14/May/2026 07:19:10] "GET / HTTP/1.1" 200 172
+[14/May/2026 07:19:11] "GET /topics/ HTTP/1.1" 200 358
+[14/May/2026 07:19:13] "GET /topics/2 HTTP/1.1" 200 1059
+[14/May/2026 07:19:17] "GET /topics/ HTTP/1.1" 200 358
+Watching for file changes with StatReloader
+[14/May/2026 09:46:53] "GET / HTTP/1.1" 200 172
+Not Found: /favicon.ico
+[14/May/2026 09:46:53] "GET /favicon.ico HTTP/1.1" 404 3810
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 14, 2026 - 09:46:21
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_log/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 14, 2026 - 09:56:46
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/base.py", line 496, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/registry.py", line 89, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/urls.py", line 23, in <module>
+    path('', include('users.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'users.urls'
+Unknown command: 'runsrver'. Did you mean runserver?
+Type 'manage.py help' for usage.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/base.py", line 496, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/registry.py", line 89, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/urls.py", line 23, in <module>
+    path('', include('users.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/users/urls.py", line 9, in <module>
+    path('login/', views.login, name='login'),
+                   ^^^^^^^^^^^
+AttributeError: module 'users.views' has no attribute 'login'
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/base.py", line 496, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/registry.py", line 89, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/urls.py", line 23, in <module>
+    path('', include('users.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/users/urls.py", line 9, in <module>
+    path('login/', views.login, name='login'),
+                   ^^^^^^^^^^^
+AttributeError: module 'users.views' has no attribute 'login'
+/home/yuanhaopeng/learning_log/users/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Not Found: /users/login/
+[14/May/2026 12:13:56] "GET /users/login/ HTTP/1.1" 404 4066
+Not Found: /favicon.ico
+[14/May/2026 12:13:56] "GET /favicon.ico HTTP/1.1" 404 4063
+[14/May/2026 12:14:02] "GET / HTTP/1.1" 200 206
+[14/May/2026 12:14:37] "GET /admin/ HTTP/1.1" 200 9677
+[14/May/2026 12:14:37] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[14/May/2026 12:14:37] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[14/May/2026 12:14:39] "POST /admin/logout/ HTTP/1.1" 200 3475
+Not Found: /users/login/
+[14/May/2026 12:14:58] "GET /users/login/ HTTP/1.1" 404 4066
+/home/yuanhaopeng/learning_log/learing_log/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 14, 2026 - 12:13:53
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[14/May/2026 12:16:21] "GET /users/login/ HTTP/1.1" 200 826
+/home/yuanhaopeng/learning_log/users/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 14, 2026 - 12:16:17
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/base.py", line 496, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/registry.py", line 89, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/urls.py", line 23, in <module>
+    path('users/', include('users.urls')),
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/users/urls.py", line 10, in <module>
+    path('logout/', views.logout_view, name='logout'),
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: module 'users.views' has no attribute 'logout_view'
+/home/yuanhaopeng/learning_log/users/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[14/May/2026 12:39:14] "POST /users/login/ HTTP/1.1" 200 1055
+[14/May/2026 12:39:41] "POST /users/login/ HTTP/1.1" 302 0
+[14/May/2026 12:39:41] "GET / HTTP/1.1" 200 251
+[14/May/2026 12:39:45] "GET /topics/ HTTP/1.1" 200 437
+[14/May/2026 12:39:46] "GET /topics/2 HTTP/1.1" 200 1138
+[14/May/2026 12:39:48] "GET /topics/ HTTP/1.1" 200 437
+[14/May/2026 12:39:49] "GET /topics/1 HTTP/1.1" 200 2047
+[14/May/2026 12:39:53] "GET /topics/ HTTP/1.1" 200 437
+[14/May/2026 12:39:56] "GET /topics/2 HTTP/1.1" 200 1138
+[14/May/2026 12:39:57] "GET /users/logout/ HTTP/1.1" 302 0
+[14/May/2026 12:39:57] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:00] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:03] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:03] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:04] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:06] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:07] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:08] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:08] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:09] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:09] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:10] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:10] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:11] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:11] "GET /topics/ HTTP/1.1" 200 411
+[14/May/2026 12:40:11] "GET / HTTP/1.1" 200 225
+[14/May/2026 12:40:12] "GET /topics/ HTTP/1.1" 200 411
+                             Watching for file changes with StatReloader
+[15/May/2026 01:38:22] "GET / HTTP/1.1" 200 251
+Not Found: /favicon.ico
+[15/May/2026 01:38:22] "GET /favicon.ico HTTP/1.1" 404 3959
+/home/yuanhaopeng/learning_log/users/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 01:38:16
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/base.py", line 496, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/registry.py", line 89, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 541, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 729, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/urls.py", line 23, in <module>
+    path('users/', include('users.urls')),
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/users/urls.py", line 11, in <module>
+    path('register/', views.register, name='register'),
+                      ^^^^^^^^^^^^^^
+AttributeError: module 'users.views' has no attribute 'register'
+/home/yuanhaopeng/learning_log/users/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[15/May/2026 03:01:10] "GET / HTTP/1.1" 200 251
+[15/May/2026 03:01:12] "GET / HTTP/1.1" 200 251
+[15/May/2026 03:01:14] "GET /topics/ HTTP/1.1" 200 437
+[15/May/2026 03:01:16] "GET /users/logout/ HTTP/1.1" 302 0
+[15/May/2026 03:01:16] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:01:24] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:01:26] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:01:28] "GET /topics/ HTTP/1.1" 200 457
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 205, in _get_response
+    self.check_response(response, callback)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 333, in check_response
+    raise ValueError(
+ValueError: The view users.views.register didn't return an HttpResponse object. It returned None instead.
+[15/May/2026 03:01:31] "GET /users/register/ HTTP/1.1" 500 63619
+/home/yuanhaopeng/learning_log/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 02:03:56
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/users/views.py", line 25, in register
+    return render(request,'user/register.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user/register.html
+[15/May/2026 03:03:06] "GET /users/register/ HTTP/1.1" 500 78318
+/home/yuanhaopeng/learning_log/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:03:05
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:03:38
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[15/May/2026 03:03:44] "GET /users/register/ HTTP/1.1" 200 1767
+[15/May/2026 03:04:16] "POST /users/register/ HTTP/1.1" 302 0
+[15/May/2026 03:04:16] "GET / HTTP/1.1" 200 254
+[15/May/2026 03:04:23] "GET /topics/ HTTP/1.1" 200 440
+[15/May/2026 03:04:25] "GET /topics/2 HTTP/1.1" 200 1141
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:03:42
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:22:11
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:22:27
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:23:36
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:37:13
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[15/May/2026 03:55:55] "GET /users/logout/ HTTP/1.1" 302 0
+[15/May/2026 03:55:55] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:55:57] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:55:58] "GET /topics/ HTTP/1.1" 302 0
+[15/May/2026 03:55:58] "GET /users/login/?next=/topics/ HTTP/1.1" 200 872
+[15/May/2026 03:56:02] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:56:07] "GET / HTTP/1.1" 200 271
+[15/May/2026 03:56:12] "GET /users/register/ HTTP/1.1" 200 1767
+[15/May/2026 03:56:13] "GET /users/login/ HTTP/1.1" 200 872
+[15/May/2026 03:56:14] "GET /users/register/ HTTP/1.1" 200 1767
+[15/May/2026 03:56:15] "GET /users/login/ HTTP/1.1" 200 872
+[15/May/2026 03:56:16] "GET /users/register/ HTTP/1.1" 200 1767
+[15/May/2026 03:56:42] "GET /users/register/ HTTP/1.1" 200 1769
+[15/May/2026 03:56:44] "GET /users/register/ HTTP/1.1" 200 1769
+[15/May/2026 03:56:48] "GET /users/login/ HTTP/1.1" 200 874
+[15/May/2026 03:56:52] "GET / HTTP/1.1" 200 273
+[15/May/2026 04:03:15] "GET /users/login/ HTTP/1.1" 200 874
+[15/May/2026 04:03:17] "POST /users/login/ HTTP/1.1" 302 0
+[15/May/2026 04:03:17] "GET / HTTP/1.1" 200 254
+[15/May/2026 04:03:20] "GET /topics/ HTTP/1.1" 200 440
+[15/May/2026 04:03:25] "GET /topics/1 HTTP/1.1" 200 2050
+/home/yuanhaopeng/learning_log/learing_logs/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 03:55:54
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:08:24
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:35:37
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:37:03
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:37:44
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:39:06
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:40:21
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:47:54
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Not Found: /topics/1
+[15/May/2026 04:49:06] "GET /topics/1 HTTP/1.1" 404 3083
+[15/May/2026 04:49:22] "GET / HTTP/1.1" 200 254
+[15/May/2026 04:49:26] "GET /topics/ HTTP/1.1" 200 313
+[15/May/2026 04:49:27] "GET /new_topic/ HTTP/1.1" 200 543
+[15/May/2026 04:49:35] "POST /new_topic/ HTTP/1.1" 302 0
+[15/May/2026 04:49:35] "GET /topics/ HTTP/1.1" 200 346
+[15/May/2026 04:49:37] "GET /topics/3 HTTP/1.1" 200 389
+Internal Server Error: /new_entry/3
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: new_entry() got an unexpected keyword argument 'top_id'
+[15/May/2026 04:49:38] "GET /new_entry/3 HTTP/1.1" 500 64288
+/home/yuanhaopeng/learning_log/learing_logs/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:49:03
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+Internal Server Error: /new_entry/3
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: new_entry() got an unexpected keyword argument 'top_id'
+[15/May/2026 04:55:56] "GET /new_entry/3 HTTP/1.1" 500 64425
+Internal Server Error: /new_entry/3
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: new_entry() got an unexpected keyword argument 'top_id'
+[15/May/2026 04:55:59] "GET /new_entry/3 HTTP/1.1" 500 64288
+Internal Server Error: /new_entry/3
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: new_entry() got an unexpected keyword argument 'top_id'
+[15/May/2026 04:59:06] "GET /new_entry/3 HTTP/1.1" 500 64288
+/home/yuanhaopeng/learning_log/learing_logs/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 04:53:24
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[15/May/2026 05:00:12] "GET /new_entry/3 HTTP/1.1" 200 596
+[15/May/2026 05:00:30] "POST /new_entry/3 HTTP/1.1" 302 0
+Internal Server Error: /topics/3
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: topic() got an unexpected keyword argument 'top_id'
+[15/May/2026 05:00:30] "GET /topics/3 HTTP/1.1" 500 64366
+/home/yuanhaopeng/learning_log/learing_logs/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 05:00:07
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[15/May/2026 05:00:58] "POST /new_entry/3 HTTP/1.1" 302 0
+[15/May/2026 05:00:58] "GET /topics/3 HTTP/1.1" 200 670
+[15/May/2026 05:01:23] "GET /topics/ HTTP/1.1" 200 346
+[15/May/2026 05:01:25] "GET / HTTP/1.1" 200 254
+[15/May/2026 05:01:29] "GET /topics/ HTTP/1.1" 200 346
+[15/May/2026 05:01:30] "GET / HTTP/1.1" 200 254
+[15/May/2026 05:01:31] "GET /topics/ HTTP/1.1" 200 346
+[15/May/2026 05:01:33] "GET /topics/3 HTTP/1.1" 200 670
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2026 - 05:00:50
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[15/May/2026 09:01:33] "GET / HTTP/1.1" 200 2067
+[15/May/2026 09:01:37] "GET /users/logout/ HTTP/1.1" 302 0
+[15/May/2026 09:01:37] "GET / HTTP/1.1" 200 2079
+[15/May/2026 09:01:41] "GET /users/login/ HTTP/1.1" 200 2680
+[15/May/2026 09:01:45] "POST /users/login/ HTTP/1.1" 302 0
+[15/May/2026 09:01:45] "GET / HTTP/1.1" 200 2067
+[15/May/2026 09:01:50] "GET /topics/ HTTP/1.1" 200 2159
+[15/May/2026 09:01:53] "GET / HTTP/1.1" 200 2067
+[15/May/2026 09:01:55] "GET /users/logout/ HTTP/1.1" 302 0
+[15/May/2026 09:01:55] "GET / HTTP/1.1" 200 2079
+[15/May/2026 09:01:57] "GET /users/login/ HTTP/1.1" 200 2680
+[15/May/2026 09:02:06] "POST /users/login/ HTTP/1.1" 200 2914
+[15/May/2026 09:02:14] "POST /users/login/ HTTP/1.1" 302 0
+[15/May/2026 09:02:14] "GET / HTTP/1.1" 200 2064
+[15/May/2026 09:02:20] "GET / HTTP/1.1" 200 2064
+[15/May/2026 09:02:53] "GET / HTTP/1.1" 200 2064
+[15/May/2026 09:03:02] "GET /topics/ HTTP/1.1" 200 2250
+[15/May/2026 09:03:06] "GET /topics/1 HTTP/1.1" 200 3860
+[15/May/2026 09:03:11] "GET / HTTP/1.1" 200 2064
+[15/May/2026 09:03:51] "GET / HTTP/1.1" 200 2079
+Not Found: /favicon.ico
+[15/May/2026 09:03:52] "GET /favicon.ico HTTP/1.1" 404 3963
+[15/May/2026 09:17:05] "GET / HTTP/1.1" 200 2330
+[15/May/2026 09:17:30] "GET / HTTP/1.1" 200 2331
+[15/May/2026 09:17:54] "GET / HTTP/1.1" 200 2332
+[15/May/2026 09:38:21] "GET / HTTP/1.1" 200 2332
+[15/May/2026 09:38:27] "GET /users/logout/ HTTP/1.1" 302 0
+[15/May/2026 09:38:27] "GET / HTTP/1.1" 200 2347
+[15/May/2026 09:38:30] "GET /users/login/ HTTP/1.1" 200 2936
+[15/May/2026 09:38:35] "POST /users/login/ HTTP/1.1" 302 0
+[15/May/2026 09:38:35] "GET / HTTP/1.1" 200 2332
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 16, 2026 - 07:50:43
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[16/May/2026 07:50:55] "GET / HTTP/1.1" 200 2332
+Not Found: /favicon.ico
+[16/May/2026 07:50:56] "GET /favicon.ico HTTP/1.1" 404 3963
+[16/May/2026 07:52:08] "GET /users/logout/ HTTP/1.1" 302 0
+[16/May/2026 07:52:08] "GET / HTTP/1.1" 200 2347
+[16/May/2026 07:52:09] "GET /users/login/ HTTP/1.1" 200 2936
+[16/May/2026 07:52:14] "POST /users/login/ HTTP/1.1" 302 0
+[16/May/2026 07:52:14] "GET / HTTP/1.1" 200 2332
+[16/May/2026 07:52:17] "GET /users/register/ HTTP/1.1" 200 3560
+[16/May/2026 07:52:21] "GET / HTTP/1.1" 200 2332
+[16/May/2026 07:59:18] "GET /topics/ HTTP/1.1" 200 2250
+[16/May/2026 07:59:24] "GET /topics/1 HTTP/1.1" 200 3860
+[16/May/2026 07:59:28] "GET /topics/ HTTP/1.1" 200 2250
+[16/May/2026 08:05:41] "GET /new_topic/ HTTP/1.1" 200 2464
+[16/May/2026 08:05:45] "GET /topics/ HTTP/1.1" 200 2250
+[16/May/2026 08:13:25] "GET /topics/ HTTP/1.1" 200 2280
+[16/May/2026 08:13:30] "GET /topics/1 HTTP/1.1" 200 3860
+[16/May/2026 08:13:33] "GET /topics/ HTTP/1.1" 200 2280
+Watching for file changes with StatReloader
+[18/May/2026 01:04:13] "GET / HTTP/1.1" 200 2332
+Not Found: /favicon.ico
+[18/May/2026 01:04:14] "GET /favicon.ico HTTP/1.1" 404 3963
+[18/May/2026 01:05:28] "GET /topics/ HTTP/1.1" 200 2280
+[18/May/2026 01:05:30] "GET /topics/1 HTTP/1.1" 200 3860
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 18, 2026 - 01:04:09
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/manage.py", line 22, in <module>
+    main()
+  File "/home/yuanhaopeng/learning_log/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/__init__.py", line 443, in execute_from_command_line
+    utility.execute()
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/__init__.py", line 383, in execute
+    settings.INSTALLED_APPS
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 75, in __getattr__
+    self._setup(name)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 62, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 162, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/settings.py", line 129, in <module>
+    if os.getcwd()=='/app':
+       ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+Watching for file changes with StatReloader
+[18/May/2026 15:23:23] "GET / HTTP/1.1" 200 2332
+[18/May/2026 15:23:32] "GET /admin/ HTTP/1.1" 200 9708
+[18/May/2026 15:23:32] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[18/May/2026 15:23:32] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
