@@ -22,3 +22,7 @@ urlpatterns = [
     path('', include('learing_logs.urls')),
     path('users/', include('users.urls')),
 ]
+
+from django.contrib.auth.models import User
+if not User.objects.filter(username="admin").exists():
+    User.objects.create_superuser("admin", "admin@test.com", "123456")
