@@ -127,7 +127,7 @@ BOOTSTRAP3={
     'include_jquery':True,
 }
 #render设置
-if os.getcwd()=='/app':
+if os.getenv('RENDER') or os.getcwd() == '/opt/render/project/src':
     import dj_database_url
     DATABASES={'default':dj_database_url.config(default='postgres://localhost')}
     #让request.is_secure()承认X-Forwarded-Proto头
@@ -138,3 +138,4 @@ if os.getcwd()=='/app':
     BASE_DIR=os.path.dirname(os.path.abspath(__file__))
     STATIC_ROOT='staticfiles'
     STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
+    DEBUG = False
