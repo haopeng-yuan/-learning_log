@@ -1019,3 +1019,696 @@ Quit the server with CONTROL-C.
 WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
 For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
 Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 09:36:54
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 09:46:42
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.
+CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/manage.py", line 22, in <module>
+    main()
+  File "/home/yuanhaopeng/learning_log/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/__init__.py", line 443, in execute_from_command_line
+    utility.execute()
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/core/management/__init__.py", line 383, in execute
+    settings.INSTALLED_APPS
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 75, in __getattr__
+    self._setup(name)
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 62, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/django/conf/__init__.py", line 162, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/yuanhaopeng/learning_log/learing_log/settings.py", line 29
+    ALLOWED_HOSTS = [*]
+                      ^
+SyntaxError: Invalid star expression
+[19/May/2026 10:02:23] "GET / HTTP/1.1" 200 2329
+[19/May/2026 10:02:30] "GET /fjiref HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 10:02:04
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+[19/May/2026 10:03:41] "GET / HTTP/1.1" 200 2329
+[19/May/2026 10:03:49] "GET /fer/erf HTTP/1.1" 404 179
+[19/May/2026 10:04:29] "GET /fetmein HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 10:03:36
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+[19/May/2026 10:05:37] "GET / HTTP/1.1" 200 2347
+[19/May/2026 10:05:39] "GET /favicon.ico HTTP/1.1" 404 179
+[19/May/2026 10:05:44] "GET /admin HTTP/1.1" 301 0
+[19/May/2026 10:05:44] "GET /admin/ HTTP/1.1" 302 0
+[19/May/2026 10:05:44] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+[19/May/2026 10:05:44] "GET /static/admin/css/login.css HTTP/1.1" 500 59
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:44] "GET /static/admin/css/base.css HTTP/1.1" 500 59
+[19/May/2026 10:05:44] "GET /static/admin/css/dark_mode.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:44] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:44] "GET /static/admin/css/responsive.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:44] "GET /static/admin/js/theme.js HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:44] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 500 59
+[19/May/2026 10:05:55] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/css/base.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/css/dark_mode.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/js/theme.js HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/css/login.css HTTP/1.1" 500 59
+[19/May/2026 10:05:55] "GET /static/admin/css/responsive.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:55] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/base.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/dark_mode.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/js/theme.js HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/login.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/responsive.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/base.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/dark_mode.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/js/theme.js HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /static/admin/css/login.css HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /static/admin/css/responsive.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 500 59
+[19/May/2026 10:05:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/base.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/dark_mode.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+[19/May/2026 10:05:56] "GET /static/admin/js/theme.js HTTP/1.1" 500 59
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/login.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/css/responsive.css HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/dj_static.py", line 88, in __call__
+    return self.cling(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 151, in __call__
+    full_path = self._full_path(path_info)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuanhaopeng/learning_log/ll_env/lib/python3.12/site-packages/static.py", line 198, in _full_path
+    return self.root + path_info
+           ~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[19/May/2026 10:05:56] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 500 59
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 10:04:49
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (staticfiles.W004) The directory '/home/yuanhaopeng/learning_log/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 1 issue (0 silenced).
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+May 19, 2026 - 10:58:59
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+[19/May/2026 10:59:22] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+[19/May/2026 10:59:26] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+[19/May/2026 10:59:26] "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+[19/May/2026 10:59:26] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+[19/May/2026 10:59:26] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[19/May/2026 10:59:26] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[19/May/2026 10:59:26] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[19/May/2026 10:59:26] "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+[19/May/2026 10:59:26] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[19/May/2026 10:59:38] "GET / HTTP/1.1" 200 2347
+Not Found: /erd
+[19/May/2026 10:59:45] "GET /erd HTTP/1.1" 404 3939
+Not Found: /leter
+[19/May/2026 10:59:56] "GET /leter HTTP/1.1" 404 3945
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 10:59:18
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+[19/May/2026 11:01:37] "GET /leter HTTP/1.1" 404 179
+[19/May/2026 11:01:42] "GET / HTTP/1.1" 200 2347
+[19/May/2026 11:01:47] "GET /admin/ HTTP/1.1" 302 0
+[19/May/2026 11:01:47] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4094
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 11:01:26
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 11:03:30
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/

@@ -1,4 +1,0 @@
-在这个子文件夹中，新建一个名为static的文件夹，
-因此这个文件夹的路径为learning_log/learning_log/static/。
-我们还需在这个文件夹中创建一个占位文件，因为项目被推送到Heroku时，
-它将不会包含原来为空的文件夹。在目录static/中，创建一个名为placeholder.txt的文件：
