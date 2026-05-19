@@ -975,3 +975,47 @@ Watching for file changes with StatReloader
 [18/May/2026 15:23:32] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
 [18/May/2026 15:23:32] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
 [18/May/2026 15:23:32] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuanhaopeng/learning_log/manage.py", line 22, in <module>
+    main()
+  File "/home/yuanhaopeng/learning_log/manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+[19/May/2026 09:17:15] "GET / HTTP/1.1" 200 2329
+Not Found: /favicon.ico
+[19/May/2026 09:17:15] "GET /favicon.ico HTTP/1.1" 404 3963
+[19/May/2026 09:17:15] "GET / HTTP/1.1" 200 2329
+[19/May/2026 09:17:41] "GET /admin/ HTTP/1.1" 200 7739
+[19/May/2026 09:17:49] "GET /topics/ HTTP/1.1" 200 2132
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 09:17:12
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
+/home/yuanhaopeng/learning_log/learing_log/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2026 - 09:36:33
+Django version 6.0.4, using settings 'learing_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.0/howto/deployment/
+Watching for file changes with StatReloader
